@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>formulario de registro</title>
+
+
+
+	<style>
+		
+		
+
+		body {
+			background-color:#35695c ;
+			
+			margin: 0;
+			padding: 0;
+			
+
+		}
+
+		h1 {
+			font: oblique bold 200%cursive;
+			
+			text-align: center;
+			width: 50%;
+			margin: auto;
+			margin-top: 30px;
+			border: 8px outset #c24412;
+			border: 8px inset  #c24412;
+
+		}
+
+		table {
+			border: 8px outset #c24412;
+			border: 8px inset  #c24412;
+			padding: 20px 50px;
+			margin-top: 20px;
+			border-radius: 5px;
+			background-color: #35695c;
+			border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;;
+		}
+
+		.envi{
+			font: oblique bold 100% cursive;
+			border: 8px outset #c24412;
+			border: 8px inset  #c24412;
+			background-color: #c24412;
+
+
+		}
+		.borr{
+			font: oblique bold 100% cursive;
+			border: 8px outset #c24412;
+			border: 8px inset  #c24412;
+			background-color: #c24412;
+		}
+		.formulario{
+			font: oblique bold 100% cursive
+
+		}
+		.nom{
+			background-color: #35695c;
+			font: oblique bold 100% cursive
+		}
+		.usu{
+			background-color: #35695c;
+			font: oblique bold 100% cursive
+		}
+		.cont{
+			background-color: #35695c;
+			font: oblique bold 100% cursive
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h1>Formulario de registro</h1>
+	<form action="registro.php" name="" method="POST" class="formulario">
+		<table border="0" align="center">
+			<tr>
+				<td>
+					Nombre y Apellido:
+				</td>
+				<td>
+					<label for="name"></label>
+					<input type="text"  class="nom" name="nombre" id="name" required  />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Nombre de Usuario:
+				</td>
+				<td>
+					<label for="user"></label>
+					<input type="text" class="usu" name="usuario" id="user" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Contraseña:
+				</td>
+				<td>
+					<label for="password"></label>
+					<input type="password" class="cont" name="contraseña" id="password" required />
+				</td>
+			</tr>
+		
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<input type="submit" name="enviar" id="enviar" value="Registrarse" class="envi"/>
+				</td>
+				<td align="center">
+					<input type="reset" name="borrar" id="borrar" value="Restablecer" class="borr" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
