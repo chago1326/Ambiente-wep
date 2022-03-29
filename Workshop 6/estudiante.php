@@ -26,9 +26,9 @@ class estudiantes{
         VALUES ('$cedul','$nomb','$apel','$coreo','$carra','$fec')";
         $query = mysqli_query($conn,$sql);
         if($query){
-            echo "Madriculado correctamente!!!";
+            //echo "Madriculado correctamente!!!";
         }else{
-            echo "Hubo un error";
+           // echo "Hubo un error";
         }
     }
 
